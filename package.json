@@ -1,0 +1,32 @@
+{
+  "name": "docbot",
+  "version": "1.0.0",
+  "scripts": {
+    "dev:backend": "nodemon server/server.js",
+    "start": "node server/server.js",
+    "dev:frontend": "webpack server --config client/webpack.config.js --mode development --open",
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jimmyho95/DocBot.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jimmyho95/DocBot/issues"
+  },
+  "homepage": "https://github.com/jimmyho95/DocBot#readme",
+  "description": "",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "nodemon": "^3.1.10",
+    "react": "^19.1.0"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
